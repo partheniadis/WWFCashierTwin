@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#123d50</color>
+    <color name="colorPrimaryDark">#393939</color>
+    <color name="colorAccent">#8cbaaf</color>
+
+    <color name="topBar">#d2d2d2</color>
+    <color name="cashierCheckout">#5dad21</color>
+    <color name="cashierBackground">#efedee</color>
+    <color name="white">#fdfdfe</color>
+
+    <color name="black_overlay">#66000000</color>
+</resources>

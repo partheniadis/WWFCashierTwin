@@ -1,0 +1,507 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context="com.partheniadisk.wwfcashiertwin.FullscreenActivity"
+    android:orientation="horizontal">
+
+
+        <!-- This FrameLayout insets its children based on system windows using
+             android:fitsSystemWindows. -->
+     <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            android:layout_weight="1.5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cashierBackground"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/topBar"
+                tools:ignore="NestedWeights">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/home"
+                    android:tint="@color/colorPrimaryDark"/>
+
+                <TextView
+                    android:id="@+id/fullscreen_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/topBar"
+                    android:gravity="top"
+                    android:keepScreenOn="true"
+                    android:padding="10dp"
+                    android:text="@string/cashier_title"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:id="@+id/RowOne"
+                android:orientation="horizontal"
+                android:background="@color/cashierBackground"
+                >
+
+                <LinearLayout
+                    android:id="@+id/button1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:gravity="center"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_marginTop="15dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:src="@drawable/egg"
+                        android:orientation="vertical"
+                        android:layout_gravity="center|top"
+                        android:layout_height="@dimen/food_image"
+                        android:layout_width="wrap_content">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0.40"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="end"
+                        android:textSize="@dimen/mainText"
+                        android:padding="2dp"
+                        android:layout_marginEnd="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Egg"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="start"
+                        android:textSize="@dimen/mainText"
+                        android:padding="2dp"
+                        android:layout_marginStart="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="a piece, 63 gr"
+                        android:textColor="@color/topBar"
+                        android:gravity="start"
+                        android:textSize="@dimen/smallText"
+                        android:padding="2dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/button2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_marginTop="15dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:src="@drawable/roastbeef"
+                        android:orientation="vertical"
+                        android:layout_gravity="center|top"
+                        android:layout_height="@dimen/food_image"
+                        android:layout_width="wrap_content">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0.90"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="end"
+                        android:textSize="@dimen/mainText"
+                        android:padding="2dp"
+                        android:layout_marginEnd="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Roast Beef"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="start"
+                        android:textSize="@dimen/mainText"
+                        android:padding="2dp"
+                        android:layout_marginStart="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="a slice, 20 gr"
+                        android:textColor="@color/topBar"
+                        android:gravity="start"
+                        android:textSize="@dimen/smallText"
+                        android:padding="2dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/button3"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:gravity="center"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_marginTop="15dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:src="@drawable/apple"
+                        android:orientation="vertical"
+                        android:layout_gravity="center|top"
+                        android:layout_height="@dimen/food_image"
+                        android:layout_width="wrap_content">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0.65"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="end"
+                        android:textSize="@dimen/mainText"
+                        android:padding="2dp"
+                        android:layout_marginEnd="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Apple"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="start"
+                        android:textSize="@dimen/mainText"
+                        android:padding="2dp"
+                        android:layout_marginStart="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="a piece, 80 gr"
+                        android:textColor="@color/topBar"
+                        android:gravity="start"
+                        android:textSize="@dimen/smallText"
+                        android:padding="2dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        />
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:id="@+id/RowTwo"
+                android:orientation="horizontal"
+                android:background="@color/cashierBackground"
+                >
+
+                <LinearLayout
+                    android:id="@+id/button4"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_marginTop="15dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:src="@drawable/whitebread"
+                        android:orientation="vertical"
+                        android:layout_gravity="center|top"
+                        android:layout_height="@dimen/food_image"
+                        android:layout_width="wrap_content">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0.50"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="end"
+                        android:textSize="@dimen/mainText"
+                        android:padding="2dp"
+                        android:layout_marginEnd="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="White Bread"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="start"
+                        android:textSize="@dimen/mainText"
+                        android:padding="2dp"
+                        android:layout_marginStart="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="a slice, 33 gr"
+                        android:textColor="@color/topBar"
+                        android:gravity="start"
+                        android:textSize="@dimen/smallText"
+                        android:padding="2dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/button5"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_marginTop="15dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:src="@drawable/brownbread"
+                        android:orientation="vertical"
+                        android:layout_gravity="center|top"
+                        android:layout_height="@dimen/food_image"
+                        android:layout_width="wrap_content">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0.50"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="end"
+                        android:textSize="@dimen/mainText"
+                        android:padding="2dp"
+                        android:layout_marginEnd="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Brown Bread"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="start"
+                        android:textSize="@dimen/mainText"
+                        android:padding="2dp"
+                        android:layout_marginStart="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="a slice, 33 gr"
+                        android:textColor="@color/topBar"
+                        android:gravity="start"
+                        android:textSize="@dimen/smallText"
+                        android:padding="2dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/button6"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_marginTop="15dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:src="@drawable/chips"
+                        android:orientation="vertical"
+                        android:layout_gravity="center|top"
+                        android:layout_height="@dimen/food_image"
+                        android:layout_width="wrap_content">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1.00"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="end"
+                        android:textSize="@dimen/mainText"
+                        android:padding="2dp"
+                        android:layout_marginEnd="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Natural chips"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="start"
+                        android:textSize="@dimen/mainText"
+                        android:padding="2dp"
+                        android:layout_marginStart="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="a bag, 40 gr"
+                        android:textColor="@color/topBar"
+                        android:gravity="start"
+                        android:textSize="@dimen/smallText"
+                        android:padding="2dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        />
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cash_receipt"
+        android:layout_weight="2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/cashier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="top"
+            android:keepScreenOn="true"
+            android:padding="10dp"
+            android:text="@string/cashier_title"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_weight="1"
+            android:background="@color/white">
+
+
+        </ListView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fullscreen_view_two"
+        style="?metaButtonBarStyle"
+        android:layout_weight="1.2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/fullscreen_content_two"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:keepScreenOn="true"
+            android:text="@string/user_title"
+            android:textColor="@color/cashierBackground"
+            android:background="@color/colorPrimary"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary">
+
+            <!-- Put here graph UI code-->
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
